@@ -1,0 +1,60 @@
+.play-zone{
+  display: grid ;
+  grid-template-columns: repeat(4, 320px);
+  grid-template-rows: repeat(2, 241px);
+  justify-content: center;
+}
+
+.whack-mole {
+  height: 241px;
+  position: relative;
+  width: 320px;
+  display: inline-grid;
+  overflow: hidden;
+}
+.whack-mole__mole-head {
+  height: 188px;
+  position: absolute;
+  width: 188px;
+  left: 54.5px;
+  transition: margin-top 0.25s;
+}
+.whack-mole__dirt-hill {
+  height: 110px;
+  position: absolute;
+  width: 320px;
+  top: 139px;
+}
+.whack-mole__mole-head--hidden{
+  height: 188px;
+  position: absolute;
+  width: 188px;
+  left: 54.5px;
+  margin-top: 249px;
+
+}
+.sb {
+  background-color: rgb(137, 79, 243);
+  border-bottom: 1px solid #000000;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+  color: rgb(255, 255, 255);
+  display: flex;
+  font-size: 30px;
+  margin-bottom: 50px;
+  padding: 10px 20px;
+} 
+
+.sb__mole-counter {
+  flex: 1 0 0;
+  text-align: right;
+} 
+
+.sb__score-holder {
+  flex: 1 0 0;
+}
+
+.sb__game-over--hidden {
+  display: none;
+} 
+
+
