@@ -1,7 +1,9 @@
-.play-zone{
-  display: grid ;
+.play-zone {
+  display: grid;
   grid-template-columns: repeat(4, 320px);
   grid-template-rows: repeat(2, 241px);
+  column-gap: 50px;
+  row-gap: 100px;
   justify-content: center;
 }
 
@@ -25,13 +27,12 @@
   width: 320px;
   top: 139px;
 }
-.whack-mole__mole-head--hidden{
+.whack-mole__mole-head--hidden {
   height: 188px;
   position: absolute;
   width: 188px;
   left: 54.5px;
   margin-top: 249px;
-
 }
 .sb {
   background-color: rgb(137, 79, 243);
@@ -42,12 +43,12 @@
   font-size: 30px;
   margin-bottom: 50px;
   padding: 10px 20px;
-} 
+}
 
 .sb__mole-counter {
   flex: 1 0 0;
   text-align: right;
-} 
+}
 
 .sb__score-holder {
   flex: 1 0 0;
@@ -55,6 +56,24 @@
 
 .sb__game-over--hidden {
   display: none;
-} 
+}
 
+.background {
+  background: url(./grass-background.jpg);
+  background-size: cover;
+  overflow: auto;
+  height: 100%;
+}
 
+.cursor {
+  cursor: url(./hammer.png), auto;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-size: cover;
+  height: 100%;
+}
